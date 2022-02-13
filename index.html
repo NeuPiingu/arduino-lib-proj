@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <button id="initSerial" style="position: absolute; top: 0; z-index: 2"
+      >Just innit?</button
+    >
+    <h1 id="connection-status"></h1>
+    <h1
+      id="mouse-value"
+      style="position: absolute; top: 10; left: 50; font-size: 64px; z-index: 2"
+    ></h1>
+    <div
+      id="arduino-stats"
+      style="
+        position: absolute;
+        top: 60;
+        right: 0;
+        display: grid;
+        z-index: 2;
+        width: 25vw;
+        height: 25vh;
+      "
+    >
+      <h1 id="joystick-x" style="font-size: 24px"></h1>
+      <h1 id="joystick-y" style="font-size: 24px"></h1>
+      <h1 id="joystick-pressed" style="font-size: 24px"></h1>
+    </div>
+    <div id="app"></div>
+    <script src="https://unpkg.com/hold-event@0.1.0/dist/hold-event.min.js"></script>
+    <script type="module" src="/main.js"></script>
+    <canvas id="bg"></canvas>
+  </body>
+</html>
